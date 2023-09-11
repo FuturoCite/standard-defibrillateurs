@@ -32,6 +32,11 @@ La tableau ci-dessous donne un aperçu des champs du schéma.
     <td>Ce champ contient un identifiant unique local. Le producteur de données le génère en associant le code INS de la commune dans laquelle se situe le défibrillateur à un nombre. Ce champ permet d'éviter localement les doublons. Le code INS de la commune est accessible <a href="https://statbel.fgov.be/fr/open-data/code-refnis">ici</a>.</td>
   </tr>
   <tr>
+    <td>Nom (name)</td>
+    <td>Obligatoire</td>
+    <td>Ce champ contient le nom du défibrillateur</td>
+  </tr>
+  <tr>
     <td>Nom de la commune (municipality)</td>
     <td>Obligatoire</td>
     <td>Ce champ contient le nom de la commune dans laquelle se situe le défibrillateur. Le nom de la commune provient de la base de données BeST Address : <a href="https://opendata.bosa.be/index.fr.html">https://opendata.bosa.be/index.fr.html</a> ou de la liste des codes INS : <a href="https://statbel.fgov.be/fr/open-data/code-refnis">https://statbel.fgov.be/fr/open-data/code-refnis</a>.</td>
@@ -54,22 +59,22 @@ La tableau ci-dessous donne un aperçu des champs du schéma.
   <tr>
     <td>Nom de rue (street_name)</td>
     <td>Obligatoire</td>
-    <td>Ce champ renseigne le nom de la voirie où se situe le défibrillateur (ou de la voirie la plus proche si elle n'est pas en voirie).</td>
+    <td>Ce champ renseigne le nom de la voirie où se situe le défibrillateur (ou de la voirie la plus proche s'il n'est pas en voirie).</td>
   </tr>
   <tr>
     <td>Code rue BeSTAddress (street_number)</td>
     <td>Obligatoire</td>
-    <td>Ce champ contient le code de la voirie où se situe le défibrillateur dans la base de données BeSTAdress (ou de la voirie la plus proche si elle n'est pas en voirie) : <a href="https://opendata.bosa.be/index.fr.html">https://opendata.bosa.be/index.fr.html</a>.</td>
+    <td>Ce champ contient le code de la voirie où se situe le défibrillateur dans la base de données BeSTAdress (ou de la voirie la plus proche s'il n'est pas en voirie) : <a href="https://opendata.bosa.be/index.fr.html">https://opendata.bosa.be/index.fr.html</a>.</td>
   </tr>
   <tr>
     <td>Code rue national (street_number_rrn)</td>
     <td>Optionnel</td>
-    <td>Code de la voirie où se situe le défibrillateur dans le registre national (ou de la voirie la plus proche si elle n'est pas en voirie).</td>
+    <td>Code de la voirie où se situe le défibrillateur dans le registre national (ou de la voirie la plus proche s'il n'est pas en voirie).</td>
   </tr>
   <tr>
     <td>Numéro de police le plus proche (house_number)</td>
-    <td>Optionnel</td>
-    <td>Ce champ est recommandé. Il contient le numéro de police (numéro de maison) le plus proche du défibrillateur.</td>
+    <td>Optionnel (recommandé)</td>
+    <td>Il contient le numéro de police (numéro de maison) le plus proche du défibrillateur.</td>
   </tr>
   <tr>
     <td>Coordonnées (coordinates)</td>
@@ -78,7 +83,7 @@ La tableau ci-dessous donne un aperçu des champs du schéma.
   </tr>
   <tr>
     <td>Intérieur (Indoor)</td>
-    <td>Optionnel</td>
+    <td>Obligatoire</td>
     <td>Ce champ précise si le défibrillateur est situé à l'intérieur.</td>
   </tr>
   <tr>
@@ -103,12 +108,12 @@ La tableau ci-dessous donne un aperçu des champs du schéma.
   </tr>
   <tr>
     <td>Accessible en permanence (permanently_accessible)</td>
-    <td>Optionnel</td>
+    <td>Obligatoire</td>
     <td>Ce champ précise si le défibrillateur est accessible en permanence. Les valeurs possibles sont "true" (accessible 24 heures sur 24) ou "false" (accessible à certains moments). Si non applicable ou inconnu, ne pas renseigner ce champ.</td>
   </tr>
   <tr>
     <td>Horaires (schedule)</td>
-    <td>Optionnel</td>
+    <td>Optionnel (recommandé)</td>
     <td>Ce champ contient les horaires auxquels le défibrillateur est accessible. Il suit le format proposé par OpenStreetMap : <a href="https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours">https://wiki.openstreetmap.org/wiki/FR:Key:opening_hours</a>.</td>
   </tr>
   <tr>
@@ -118,7 +123,7 @@ La tableau ci-dessous donne un aperçu des champs du schéma.
   </tr>
   <tr>
     <td>Gestionnaire (provider)</td>
-    <td>Optionnel</td>
+    <td>Optionnel (recommandé)</td>
     <td>Ce champ renseigne le gestionnaire du défibrillateur, le cas échéant.</td>
   </tr>
   <tr>
@@ -143,8 +148,8 @@ La tableau ci-dessous donne un aperçu des champs du schéma.
   </tr>
   <tr>
     <td>Numéro de téléphone (phone_number)</td>
-    <td>Optionnel</td>
-    <td>Ce champ est recommandé. Ce champ renseigne le numéro de téléphone pour toute communication relative au défibrillateur. Il respecte le code de rédaction interinstitutionnel européen : <a href="http://publications.europa.eu/code/fr/fr-390300.htm">http://publications.europa.eu/code/fr/fr-390300.htm</a></td>
+    <td>Optionnel (recommandé)</td>
+    <td>Ce champ renseigne le numéro de téléphone pour toute communication relative au défibrillateur. Il respecte le code de rédaction interinstitutionnel européen : <a href="http://publications.europa.eu/code/fr/fr-390300.htm">http://publications.europa.eu/code/fr/fr-390300.htm</a></td>
   </tr>
   <tr>
     <td>Marque (brand)</td>
