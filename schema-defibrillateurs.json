@@ -375,6 +375,56 @@
 			"constraints": {
 				"required": false
 			}
+		},
+		{
+			"name": "brand",
+			"title": "Marque",
+			"description": "Ce champ renseigne la marque du défibrillateur",
+			"example": "Defibtech",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "model",
+			"title": "Modèle",
+			"description": "Ce champ renseigne le modèle du défibrillateur",
+			"example": "Defibtech Lifeline Automatique",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "serial_number",
+			"title": "Numéro de série",
+			"description": "Ce champ renseigne le numéro de série du défibrillateur",
+			"example": "DCF-E120-FR",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "adult_electrodes_expiry_date",
+			"title": "Péremption Electrodes Adulte",
+			"description": "Ce champ renseigne la date de péremption des électrodes adulte. Il respecte le format ISO 8601 : année-mois-jour (YYYY-MM-DD)",
+			"example": "2023-11-19",
+			"type": "date",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "adult_electrodes_batch",
+			"title": "Lot Electrode Adulte",
+			"description": "Ce champ renseigne le numéro du lot des électrodes adulte.",
+			"example": "A15789248",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
 		}
 	],
 	"primaryKey": "id"
