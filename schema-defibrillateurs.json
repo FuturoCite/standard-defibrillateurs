@@ -484,7 +484,7 @@
 			"name": "created_date",
 			"title": "Date de création de la donnée",
 			"description": "Ce champ indique la date et l'heure de création de la donnée dans le jeu. Il respecte le format ISO 8601 :",
-			"example": "2022-10-05",
+			"example": "2022-10-05T12:24:03+02:00",
 			"type": "date",
 			"constraints": {
 				"required": false
