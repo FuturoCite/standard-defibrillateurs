@@ -14,13 +14,6 @@
 			"path": "https://creativecommons.org/licenses/by/2.0/be/"
 		}
 	],
-	"resources": [
-		{
-			"title": "Fichier valide (CSV)",
-			"name": "exemple-valide-csv",
-			"path": "https://raw.githubusercontent.com/FuturoCite/standard-defibrillateurs/main/exemple-valide.csv"
-		}
-	],
 	"author": "FuturoCité",
 	"contact": "https://www.futurocite.be/contact/demande-informations/",
 	"contributors": [
