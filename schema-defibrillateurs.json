@@ -118,6 +118,119 @@
 				"unique": true
 			}
 			
+		},
+		{
+			"name": "name",
+			"title": "Nom",
+			"description": "Ce champ contient le nom du défibrillateur",
+			"example": "Défibrillateur du centre sportif",
+			"type": "string",
+			"constraints": {
+				"required": true
+			}
+		},
+		{
+			"name": "municipality",
+			"title": "Nom de la commune",
+			"description": "Ce champ contient le nom de la commune dans laquelle se situe le défibrillateur. Le nom de la commune provient de la base de données BeST Address : https://opendata.bosa.be/index.fr.html  ou de la liste des codes INS : https://statbel.fgov.be/fr/open-data/code-refnis ",
+			"example": "Namur",
+			"type": "string",
+			"constraints": {
+				"required": true
+			}
+		},
+		{
+			"name": "ins_code",
+			"title": "Code INS",
+			"description": "Ce champ contient le code INS de la commune où se situe le défibrillateur. Il est accessible ici :  https://statbel.fgov.be/fr/open-data/code-refnis ",
+			"example": "92094",
+			"type": "string",
+			"constraints": {
+				"required": true,
+				"pattern": "^\\d{5}$"
+			}
+		},
+		{
+			"name": "zone_address",
+			"title": "Partie de commune",
+			"description": "Ce champ contient le nom de la partie de commune où se situe le défibrillateur, conforme à l'appelation dans StatBel : https://statbel.fgov.be/fr/propos-de-statbel/methodologie/classifications/geographie",
+			"example": "WEPION",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "ins_zone_address",
+			"title": "Code INS de la partie de commune",
+			"description": "Ce champ contient le code INS de la partie de commune où se situe le défibrillateur. La découpe géographique de StatBel Level 5 (NIS6) liste ces codes : https://statbel.fgov.be/fr/propos-de-statbel/methodologie/classifications/geographie",
+			"example": "92094C",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "street_name",
+			"title": "Nom de rue",
+			"description": "Ce champ renseigne le nom de la voirie où se situe le défibrillateur (ou de la voirie la plus proche s'il n'est pas en voirie).",
+			"example": "Avenue Sart Paradis",
+			"type": "string",
+			"constraints": {
+				"required": true
+			}
+		},
+		{
+			"name": "street_number",
+			"title": "Code rue BeSTAddress",
+			"description": "Ce champ contient le code de la voirie où se situe le défibrillateur dans la base de données BeSTAdress (ou de la voirie la plus proche s'il n'est pas en voirie) : https://opendata.bosa.be/index.fr.html",
+			"example": "7753128",
+			"type": "string",
+			"constraints": {
+				"required": true
+			}
+		},
+		{
+			"name": "street_number_rrn",
+			"title": "Code rue national",
+			"description": "Code de la voirie où se situe le défibrillateur dans le registre national (ou de la voirie la plus proche s'il n'est pas en voirie)",
+			"example": "8701",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "house_number",
+			"title": "Numéro de police le plus proche",
+			"description": "Ce champ est recommandé. Il contient le numéro de police (numéro de maison) le plus proche du défibrillateur",
+			"example": "4",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "coordinates",
+			"title": "Coordonnées",
+			"description": "Ce champ indique les coordonnées du défibrillateur. Il est au format GeoJSON (se référer au fichier csv d'exemple et/ou à la documentation pour un exemple de valeur bien formatée). S'il est impossible d'exporter la donnée depuis un logiciel métier, les coordonnées d'un lieu peuvent être générées ici : https://www.coordonnees-gps.fr/carte/pays/BE",
+			"example": {
+				"type": "Feature",
+				"geometry": {
+					"type": "Point",
+					"coordinates": [
+						4.8248565701,
+						50.4712861231
+					]
+				},
+				"properties": {
+					"name": "un nom"
+				}
+			},
+			"type": "geojson",
+			"constraints": {
+				"required": true
+			}
 		}
 	],
 	"primaryKey": "id"
