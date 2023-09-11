@@ -345,6 +345,36 @@
 			"constraints": {
 				"required": false
 			}
+		},
+		{
+			"name": "contact_email",
+			"title": "Email du contact",
+			"description": "Ce champ renseigne l'adresse email de contact pour toute communication relative au défibrillateur.",
+			"example": "info@mail.be",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "contact_function",
+			"title": "Fonction du contact",
+			"description": "Ce champ précise la fonction de la personne de contact pour toute communication",
+			"example": "Responsable technique du bâtiment",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "phone_number",
+			"title": "Numéro de téléphone",
+			"description": "Ce champ est recommandé. Ce champ renseigne le numéro de téléphone pour toute communication relative au défibrillateur. Il respecte le code de rédaction interinstitutionnel européen : http://publications.europa.eu/code/fr/fr-390300.htm",
+			"example": "+32 081246611",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
 		}
 	],
 	"primaryKey": "id"
