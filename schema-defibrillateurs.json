@@ -340,7 +340,7 @@
 			"name": "contact_name",
 			"title": "Nom du contact",
 			"description": "Ce champ renseigne le nom de la personne à contacter pour toute communication relative au défibrillateur.",
-			"example": "Pierre Dupont,
+			"example": "Pierre Dupont",
 			"type": "string",
 			"constraints": {
 				"required": false
