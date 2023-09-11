@@ -173,7 +173,7 @@
 		{
 			"name": "street_name",
 			"title": "Nom de rue",
-			"description": "Ce champ renseigne le nom de la voirie où se situe le défibrillateur (ou de la voirie la plus proche si elle n'est pas en voirie).",
+			"description": "Ce champ renseigne le nom de la voirie où se situe le défibrillateur (ou de la voirie la plus proche s'il n'est pas en voirie).",
 			"example": "Avenue Sart Paradis",
 			"type": "string",
 			"constraints": {
@@ -183,7 +183,7 @@
 		{
 			"name": "street_number",
 			"title": "Code rue BeSTAddress",
-			"description": "Ce champ contient le code de la voirie où se situe le défibrillateur dans la base de données BeSTAdress (ou de la voirie la plus proche si elle n'est pas en voirie) : https://opendata.bosa.be/index.fr.html",
+			"description": "Ce champ contient le code de la voirie où se situe le défibrillateur dans la base de données BeSTAdress (ou de la voirie la plus proche s'il n'est pas en voirie) : https://opendata.bosa.be/index.fr.html",
 			"example": "7753128",
 			"type": "string",
 			"constraints": {
@@ -193,7 +193,7 @@
 		{
 			"name": "street_number_rrn",
 			"title": "Code rue national",
-			"description": "Code de la voirie où se situe le défibrillateur dans le registre national (ou de la voirie la plus proche si elle n'est pas en voirie)",
+			"description": "Code de la voirie où se situe le défibrillateur dans le registre national (ou de la voirie la plus proche s'il n'est pas en voirie)",
 			"example": "8701",
 			"type": "string",
 			"constraints": {
@@ -239,7 +239,7 @@
 			"example": "true",
 			"type": "boolean",
 			"constraints": {
-				"required": false
+				"required": true
 			}
 		},
 		{
@@ -293,7 +293,7 @@
 			"example": "true",
 			"type": "boolean",
 			"constraints": {
-				"required": false
+				"required": true
 			}
 		},
 		{
