@@ -209,68 +209,6 @@
 			"constraints": {
 				"required": false
 			}
-		},
-		{
-			"name": "coordinates",
-			"title": "Coordonnées",
-			"description": "Ce champ indique les coordonnées du défibrillateur. Il est au format GeoJSON (se référer au fichier csv d'exemple et/ou à la documentation pour un exemple de valeur bien formatée). S'il est impossible d'exporter la donnée depuis un logiciel métier, les coordonnées d'un lieu peuvent être générées ici : https://www.coordonnees-gps.fr/carte/pays/BE",
-			"example": {
-				"type": "Feature",
-				"geometry": {
-					"type": "Point",
-					"coordinates": [
-						4.8248565701,
-						50.4712861231
-					]
-				},
-				"properties": {
-					"name": "un nom"
-				}
-			},
-			"type": "geojson",
-			"constraints": {
-				"required": true
-			}
-		},
-		{
-			"name": "Indoor",
-			"title": "Intérieur",
-			"description": "",
-			"example": "true",
-			"type": "boolean",
-			"constraints": {
-				"required": true
-			}
-		},
-		{
-			"name": "building",
-			"title": "Bâtiment",
-			"description": "Ce champ contient le nom du bâtiment dans lequel se situe le défibrillateur dans le cas où le défibrillateur se trouve dans un bâtiment. Si non applicable/non connu : ne pas renseigner ce champ.",
-			"example": "Centre sportif",
-			"type": "string",
-			"constraints": {
-				"required": false
-			}
-		},
-		{
-			"name": "floor",
-			"title": "Etage d'accessibilité du défibrillateur",
-			"description": "Ce champ permet de fournir un complément d'information sur l'accès au défibrillateur",
-			"example": "1",
-			"type": "integer",
-			"constraints": {
-				"required": false
-			}
-		},
-		{
-			"name": "access_precision",
-			"title": "Complément d'information sur l'accès au défibrillateur",
-			"description": "Ce champ permet de fournir un complément d'information sur l'accès au défibrillateur",
-			"example": "Au bout du couloir, dans un renfoncement à droite",
-			"type": "string",
-			"constraints": {
-				"required": false
-			}
 		}
 	],
 	"primaryKey": "id"
