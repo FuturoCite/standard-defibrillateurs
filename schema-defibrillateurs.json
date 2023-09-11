@@ -261,6 +261,40 @@
 			"constraints": {
 				"required": false
 			}
+		},
+		{
+			"name": "access_precision",
+			"title": "Complément d'information sur l'accès au défibrillateur",
+			"description": "Ce champ permet de fournir un complément d'information sur l'accès au défibrillateur",
+			"example": "Au bout du couloir, dans un renfoncement à droite",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "accessibility",
+			"title": "Accessibilité",
+			"type": "string",
+			"description": "Ce champ précise si le défibrillateur est accessible au public ou pas. Si le défibrillateur est accessible au public, utiliser la valeur 'Public'. S'il n'est pas accessible au public, la valeur 'Privé'. Si non applicable/non connu : ne pas renseigner ce champ.",
+			"example": "Public",
+			"constraints": {
+				"required": true,
+				"enum": [
+					"Public",
+					"Privé"
+				]
+			}
+		},
+		{
+			"name": "permanently_accessible",
+			"title": "Accessible en permanence",
+			"description": "Ce champ précise si le défibrillateur est accessible librement en permanence. Si le défibrillateur est accessible 24 heures sur 24, utiliser la valeur 'true'. S'il n'est accessible qu'à certains moments, la valeur 'false'. Si non applicable/non connu : ne pas renseigner ce champ.",
+			"example": "true",
+			"type": "boolean",
+			"constraints": {
+				"required": true
+			}
 		}
 	],
 	"primaryKey": "id"
