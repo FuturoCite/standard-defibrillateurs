@@ -305,6 +305,26 @@
 			"constraints": {
 				"required": false
 			}
+		},
+		{
+			"name": "picture",
+			"title": "Photo",
+			"description": "Ce champ contient une url qui renvoie vers une photo du défibrillateur dans son environnement. Il est préconisé un plan large pour que le défibrillateur  soit visible dans son environnement. La photo déposée devra être libre de droit, sous format Open Source",
+			"example": "http://www.monsite.com/monimage.jpg",
+			"type": "string",
+			"constraints": {
+				"required": false
+			}
+		},
+		{
+			"name": "provider",
+			"title": "Gestionnaire",
+			"type": "string",
+			"description": "Ce champ est recommandé. Ce champ renseigne le gestionnaire du défibrillateur",
+			"example": "Ville de Namur",
+			"constraints": {
+				"required": false
+			}
 		}
 	],
 	"primaryKey": "id"
