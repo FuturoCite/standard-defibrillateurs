@@ -255,7 +255,7 @@
 		{
 			"name": "floor",
 			"title": "Etage d'accessibilité du défibrillateur",
-			"description": "Ce champ permet de fournir un complément d'information sur l'accès au défibrillateur",
+			"description": "Ce champ permet de fournir un complément d'information sur l'accès au défibrillateur. Le rez de chaussée correspond au niveau 0.",
 			"example": "1",
 			"type": "integer",
 			"constraints": {
