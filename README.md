@@ -94,7 +94,7 @@ La tableau ci-dessous donne un aperçu des champs du schéma.
   <tr>
     <td>Étage d'accessibilité du défibrillateur (floor)</td>
     <td>Optionnel</td>
-    <td>Ce champ permet de fournir un complément d'information sur l'accès au défibrillateur. Le rez de chaussée correspond au niveau 0.</td>
+    <td>Ce champ contient l'étage du bâtiment où se trouve le défibrillateur dans le cas où le défibrillateur se trouve dans un bâtiment. Le rez de chaussée correspond au niveau 0. Si non applicable/non connu : ne pas renseigner ce champ.</td>
   </tr>
   <tr>
     <td>Complément d'information sur l'accès au défibrillateur (access_precision)</td>
